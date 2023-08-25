@@ -3,7 +3,7 @@
   width: 20px;
   height: 20px;
   pointer-events: none;
-  background-color: none;
+  background-color: none!important;
   z-index: 9999;
 }
 
