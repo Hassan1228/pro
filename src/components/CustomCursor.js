@@ -15,7 +15,7 @@ const CustomCursor = () => {
       <style jsx>{`
         #cursor-outer {
            
- background-color: none;
+ background-color: none!important;
   border: 2px dotted white;
             
         }
