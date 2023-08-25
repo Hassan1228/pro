@@ -27,7 +27,6 @@ const MyApp = ({ Component, pageProps }) => {
   return (
   
     <ContextProvider>
-
       <Component {...pageProps}  /> 
     </ContextProvider>
 
