@@ -11,7 +11,7 @@ import FooterSeven from './MainFooter/FooterSeven';
 import headerData from "@/data/header";
 import { Image } from "react-bootstrap";
 import Link from 'next/link';
-import CustomCursor from "@/components/CustomCursor";
+
 
 
 function Home() {
@@ -86,7 +86,7 @@ function Home() {
             <div id="paper-window">
   
                 <div id="paper-front">
-        <CustomCursor/>
+      
                     <Link href="/" className='nav-logoa' passHref>
 
                         <Image className="nav-logo1" src={logo7.src} alt="" />
