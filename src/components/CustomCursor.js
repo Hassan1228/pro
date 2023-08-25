@@ -1,57 +1,31 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import React, { useEffect } from 'react';
+import styles from './CustomCursor.module.css';
+import animatedCursor from 'animated-cursor'; // Import the animatedCursor library
 
-
-const AnimatedCursor = () => {
-  const cursorRef = useRef(null);
-
+const CustomCursor = () => {
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      gsap.to(cursorRef.current, {
-        x: e.clientX,
-        y: e.clientY,
-        duration: 0.2,
-        ease: 'power2.out',
-      });
-    };
-
-    document.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    };
+    const ac = animatedCursor();
+    ac.init();
   }, []);
 
   return (
-    <div ref={cursorRef} className='animated-cursor'>
-      <div className='dot'></div>
+    <div id="cursor" className={styles.cursor}>
+      <div id="cursor-outer"></div>
+      <div id="cursor-inner"></div>
       <style jsx>{`
-      .animated-cursor {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        pointer-events: none;
-        z-index: 9999;
-       border : 3px solid White;
-        transform-origin: center;
-        opacity: 0.8;
-      }
-      
-      .dot {
-        width: 10px;
-        height: 10px;
-        background-color: var(--bg-color-1);
-        border-radius: 50%;
-      }
-      
-    `}</style>
-
+        #cursor-outer {
+            background-color: #a9278fa8!important;
+            
+        }
+        #cursor-inner {
+            background-color: #fff!important;
+            width: 10px!important;
+            height: 10px!important;
+       
+        }
+      `}</style>
     </div>
   );
 };
 
-export default AnimatedCursor;
+export default CustomCursor;
