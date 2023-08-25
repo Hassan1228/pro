@@ -16,7 +16,7 @@ const CustomCursor = () => {
         #cursor-outer {
            
  background: none!important;
-  border: 2px dotted white;
+
             
         }
         #cursor-inner {
