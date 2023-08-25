@@ -84,8 +84,9 @@ function Home() {
                 </nav>
             </div>
             <div id="paper-window">
-        <CustomCursor/>
+  
                 <div id="paper-front">
+        <CustomCursor/>
                     <Link href="/" className='nav-logoa' passHref>
 
                         <Image className="nav-logo1" src={logo7.src} alt="" />
