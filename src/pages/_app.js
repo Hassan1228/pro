@@ -18,7 +18,7 @@ import "tiny-slider/dist/tiny-slider.css";
 import "@/styles/style.css";
 import "@/styles/hover.css";
 import "@/styles/responsive.css";
-import CustomCursor from "@/components/CustomCursor";
+
 
 
 
@@ -27,7 +27,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
   
     <ContextProvider>
-<CustomCursor/>
+
       <Component {...pageProps}  /> 
     </ContextProvider>
 
