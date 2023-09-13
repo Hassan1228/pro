@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 export default class Text extends Component {
   render() {
     return (
-      <div className='text' data-aos="fade-up fade-down">
+      <div className='text' data-aos="fade-right
+">
         <h4 className='h4'>Are you seeking a digital agency with the best web design and development portfolio?</h4>
         <p className='p'>We have been lucky enough to have incredibly talented companies choose us to devise and cement their digital presence within the industry. Through a lot <br/>of trial and error and quality assurance, we have built projects that yield profitable results.</p>
         <style jsx>{`
