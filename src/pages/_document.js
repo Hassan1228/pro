@@ -21,6 +21,7 @@ class MyDocument extends Document {
   }
 
   render() {
+    
     return (
       <Html lang="en">
         <Head>
@@ -73,10 +74,10 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-       
+         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
           
           <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-       
+          <script async src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
         </Head>
         <body>
           <Main />
